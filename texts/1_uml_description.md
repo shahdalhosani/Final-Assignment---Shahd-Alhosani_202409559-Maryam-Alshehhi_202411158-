@@ -1,1 +1,3 @@
+1. UML Class Diagram
+   
 In this section, we present the UML class diagram for the Smart Campus Facility Booking System. The diagram shows the main classes in the system, including User, Admin, Facility, Booking, and BookingSystem, along with their attributes and methods. We also showed the relationships between the classes, including inheritance, and association along with the multiplicity. This design follows a modular structure, where each class has a specific role, making the system organized, clear, and easy to manage.
