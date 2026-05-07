@@ -1,11 +1,11 @@
 In this section, we present the UML class diagram for the Smart Campus Facility Booking System. The diagram shows the main classes in the system, including User, Admin, Facility, Booking, and BookingSystem, along with their attributes and methods. We also showed the relationships between the classes, including inheritance, and association along with the multiplicity. This design follows a modular structure, where each class has a specific role, making the system organized, clear, and easy to manage.
 
 
-Description - Identify Classes and Relationships:
+Description - Identify Classes and Relationships
 
 In this section, we explained the relationships between each class, such as inheritance between Admin and User, and associations between User and Booking, and Booking and Facility. Additionally, the BookingSystem class is associated with User, Booking, and Facility. We also explained what each relationship mean within our system.
 
-User:
+User
 
 The User class represents any person who uses the system, such as a student or a staff member. In this class, we included important details like user ID, name, email, password, and access type (for example, standard or premium). These details help identify the user and allow them to log in. We also included methods such as login() to allow the user to access the system and upgrade_access() to change their access level. In addition, getter and setter methods are included so that the system can safely read and update user information when needed. The User class is connected to the Booking class, where one user can make zero or many bookings (0..*). This means a user might not have any bookings yet, or they can have multiple bookings. The User class is also connected to the BookingSystem class, which manages all users in the system.
 
