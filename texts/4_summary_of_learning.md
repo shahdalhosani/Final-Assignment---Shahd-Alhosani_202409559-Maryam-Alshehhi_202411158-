@@ -1,1 +1,15 @@
+In this project, we created a Smart Campus Facility Booking System using Python, Tkinter GUI, Object-Oriented Programming (OOP), and Pickle for data storage. The purpose of the system was to help students and staff book campus facilities such as study rooms sports courts and event halls in an organized and easy way. The project followed the assignment requirements and included both user and admin features.
 
+We first started by designing a UML Class Diagram to plan the structure of the system. The main classes we created were User, Admin, Facility, Booking, and BookingSystem. The diagram also showed the relationships between the classes. For example, the Admin class inherited from the User class because admins are users with extra permissions. We also connected the classes using associations, such as users making bookings and facilities being linked to bookings.
+
+After completing the UML diagram we implemented the Python code in PyCharm. Each class had its own attributes and methods based on its role in the system. The User class stored user information and allowed login and account upgrades. The Admin class allowed admins to view bookings, update facility availability, and upgrade users to Premium access. The Facility class stored details such as facility type, capacity, available time slots, and booking price. The Booking class managed booking details, booking confirmation, cancellation, and total cost calculation. The BookingSystem class controlled all users, facilities, and bookings together.
+
+We also created a full GUI using the Tkinter library. The system included several pages such as the main menu, login page creates account page, user dashboard, booking pages, modify booking page, delete booking page, modify user details page, and admin dashboard. The GUI made the system more user-friendly and easier to use.
+
+The system also included important booking rules. Standard users could only reserve one facility type, while Premium users could reserve multiple facility types. Before confirming a booking, the system checked if the selected time slot was available. It also calculated the booking cost automatically depending on the facility price and booking duration.
+
+To save data permanently, we used the Pickle library. This allowed user accounts, facilities, and bookings to be stored in binary files so the information would remain saved even after closing the program. We also added error handling to prevent problems such as empty fields, invalid IDs, duplicate emails, and incorrect inputs. Helpful messages were displayed to guide the user when errors happened.
+
+Finally, we created and tested multiple test cases to make sure all features worked correctly. We tested account creation, login, making bookings, modifying bookings, deleting bookings, updating user details, upgrading users, and updating facility availability. Screenshots were included as evidence to show the successful working scenarios.
+
+Overall, this project helped us improve our programming, GUI design, problem-solving, and teamwork skills while developing a complete and functional campus booking system.
